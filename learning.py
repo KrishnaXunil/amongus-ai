@@ -140,7 +140,7 @@ def after_voting_train(state, action, reward, next_state, done, correct_votes, t
     # Debugging info
     print(f"Updated weights: {[getattr(bot_ai, f'W{i}') for i in range(1, 7)]}")
     print(f"Latest success rate: {bot_ai.success_rate_history[-1]:.2f}")
-    bot_ai.plot_progress()
+    # bot_ai.plot_progress()
 
 def bot_vote(state):
     return bot_ai.act(state)
